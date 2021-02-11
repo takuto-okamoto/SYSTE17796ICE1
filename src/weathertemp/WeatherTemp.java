@@ -23,6 +23,9 @@ public class WeatherTemp {
         
         double avg = calcAvg(temps);
         System.out.println("Average temperature is: " + avg);
+        
+        double maxTemp = calcMax(temps);
+        System.out.println("Max temperature is: " + maxTemp);
     }
     
     public static double calcAvg(double[] temps) {
@@ -44,5 +47,15 @@ public class WeatherTemp {
         }
         
         return Math.floor(avg * 10) / 10;
+    }
+    
+    public static double calcMax(double[] temps) {
+        double maxTemp = 0;
+        for(double temp:temps) {
+            if(temp > maxTemp) {
+                maxTemp = temp;
+            }
+        }        
+        return Math.floor(maxTemp * 10) / 10;
     }
 }

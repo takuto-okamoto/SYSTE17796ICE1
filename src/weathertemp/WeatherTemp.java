@@ -7,7 +7,7 @@ package weathertemp;
 
 /**
  *
- * @author Takuto
+ * @author Takuto Okamoto Feb 11th, 2021
  */
 public class WeatherTemp {
 
